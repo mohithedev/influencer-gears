@@ -1,0 +1,9 @@
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    
+}
+
+/* for table or medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    
+}
