@@ -1,6 +1,13 @@
 /* variable style */
 :root{
-    --primary: ;
+    --primary_color: #fff;
+    --white_gray: #D9DBE1; 
+    --black: #000000de;
+    --matte_black: #3A3A3A;
+    --black_gray: #18191F;
+    --gray: #787885;
+    --pinkish: #E02C6D;
+    --blueish: #0A0826;
 }
 /* Reset default styles */
 *,
