@@ -28,15 +28,21 @@ body {
     font-family: var(--fm-primary);
 }
 /* shared or common style  */
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .description{
   color: var(--gray);
   font-size: 1rem;
   font-weight: 700;
   line-height: 28px;
   margin: 25px 0;
-}
-section{
-  margin-bottom: 100px;
 }
 .matte_black{
   color: var(--matte-black);
@@ -50,12 +56,11 @@ button{
   outline: 0;
   cursor: pointer;
 }
-/* header style start */
-header .container{
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 20px;
+section{
+  margin-bottom: 100px;
 }
+/* header style start */
+
 /* nav style start */
 nav{
   display: flex;
@@ -73,10 +78,6 @@ nav li{
 nav li a{
   text-decoration: none;
   color: var(--gray);
-}
-.nav_title{
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 /* nav style end */
 
@@ -211,3 +212,36 @@ main{
 }
 /* featured section style end */
 /* main area style end */
+
+/* footer style start */
+footer{
+  background: var(--blueish);
+  text-align: center;
+}
+footer .title{
+  color: var(--primary-clr);
+  margin-bottom: 10px;
+}
+footer .description{
+  margin: 0;
+  color: var(--white-gray);
+  font-size: 14px;
+}
+footer .social_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.social_icon a{
+  width: 33px;
+  height: 33px;
+  background: var(--gray);
+  padding: 5px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--black-gray);
+  font-size: 1.2rem;
+}
+/* footer style end */
