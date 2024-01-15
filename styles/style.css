@@ -8,6 +8,7 @@
     --gray: #787885;
     --pinkish: #E02C6D;
     --blueish: #0A0826;
+    --orange:  #FB8200;
     --fs-base: 16px;
     --fm-primary: 'Poppins', sans-serif;
     --fm-secondary: 'Inter', sans-serif;
@@ -37,6 +38,9 @@ body {
 section{
   margin-bottom: 100px;
 }
+.matte_black{
+  color: var(--matte-black);
+}
 /* header style start */
 header .container{
   max-width: 1440px;
@@ -62,7 +66,6 @@ nav li a{
   color: var(--gray);
 }
 .nav_title{
-  color: var(--matte-black);
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -82,7 +85,6 @@ nav li a{
 .banner_content .banner_title{
   font-size: 3.2rem;
   font-weight: 700;
-  color: var(--matte-black);
   line-height: 70px;
 }
 .banner_content .description{
@@ -118,7 +120,7 @@ main{
   margin: 0 auto;
   padding: 20px;
 }
-/* partner style start */
+/* partner section style start */
 .partner_img_container{
   display: flex;
   justify-content: center;
@@ -128,3 +130,60 @@ main{
   border-top: 1px solid var(--white-gray);
   border-bottom: 1px solid var(--white-gray);
 }
+/* partner section style end */
+
+/* popular collection start */
+#collection{
+  text-align: center;
+}
+.collection_title{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.collection_card_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 30px;
+  justify-content: center;
+  padding: 30px 0;
+}
+.collection_card{
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  background: var(--primary-clr);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.collection_card img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.collection_card .card_title{
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.collection_card .card_price{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--black);
+  margin: 10px 0;
+}
+.card_rating .fa-solid{
+  color: var(--orange);
+}
+.collection_card .description{
+  font-family: var(--fm-secondary);
+  margin: 0;
+}
+.collection_card_wrapper a{
+  text-decoration: none;
+  justify-self: end;
+  display: block;
+  color: var(--pinkish);
+  font-weight: 600;
+  font-size: 1rem;
+  grid-column: 1/-1;
+}
+/* popular collection end */
+/* main area style end */
