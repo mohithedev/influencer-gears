@@ -41,6 +41,15 @@ section{
 .matte_black{
   color: var(--matte-black);
 }
+button{
+  color: var(--primary-clr);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
 /* header style start */
 header .container{
   max-width: 1440px;
@@ -92,14 +101,7 @@ nav li a{
 }
 .banner_content .banner_btn{
   background: var(--pinkish);
-  color: var(--primary-clr);
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 10px 24px;
   border-radius: 40px;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
 }
 .banner_img{
   background-image: url("../images/Circle\ design.svg");
@@ -186,4 +188,26 @@ main{
   grid-column: 1/-1;
 }
 /* popular collection end */
+
+/* featured section style start */
+#featured{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+#featured img{
+  width: 100%;
+}
+.featured_content .featured_title{
+  font-size: 2.8rem;
+  color: var(--blueish);
+}
+.featured_content .description{
+  max-width: 500px;
+}
+.featured_content .featured_btn{
+  background: var(--pinkish);
+}
+/* featured section style end */
 /* main area style end */

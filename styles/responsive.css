@@ -1,13 +1,16 @@
 /* for mobile devices */
 @media screen and (max-width: 576px) {
   nav,
-  .banner_container{
+  .banner_container,
+  #featured{
     flex-direction: column;
   }
-  .banner_container {
+  .banner_container,
+  #featured{
     text-align: center;
   }
-  .banner_container .banner_title {
+  .banner_container .banner_title,
+  .featured_content .featured_title{
     font-size: 1.7rem;
     line-height: normal;
   }
@@ -29,8 +32,39 @@
   .collection_card_wrapper{
     grid-template-columns: 1fr;
   }
-
+  #featured{
+    gap: 30px;
+  }
+  .featured_content{
+    order: 1;
+  }
+  .featured_img{
+    order: 2;
+  }
 }
+
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+  #featured{
+    flex-direction: column;
+    gap: 20px;
+    }
+    .featured_content{
+      order: 1;
+      text-align: center;
+    }
+    .featured_content .featured_title{
+      font-size: 2.6rem;
+    }
+    .featured_content .description{
+      margin: 10px auto;
+    }
+    .featured_img{
+      order: 2;
+    }
+}
+
+
 /* for table or medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .partner_img_container{
