@@ -19,8 +19,18 @@
   nav li:last-child {
     margin-right: 0;
   }
-}
+  .partner_img_container{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .partner_img_container img{
+    width: 20%;
+  }
 
+}
 /* for table or medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    .partner_img_container{
+    flex-wrap: wrap;
+  }
 }
