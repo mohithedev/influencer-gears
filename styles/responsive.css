@@ -1,9 +1,26 @@
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-    
+  nav,
+  .banner_container {
+    flex-direction: column;
+  }
+  .banner_container {
+    text-align: center;
+  }
+  .banner_container .banner_title {
+    font-size: 1.7rem;
+    line-height: normal;
+  }
+  nav li {
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  nav li:last-child {
+    margin-right: 0;
+  }
 }
 
 /* for table or medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    
 }

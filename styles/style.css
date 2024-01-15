@@ -1,13 +1,16 @@
 /* variable style */
 :root{
-    --primary_color: #fff;
-    --white_gray: #D9DBE1; 
+    --primary-clr: #fff;
+    --white-gray: #D9DBE1; 
     --black: #000000de;
-    --matte_black: #3A3A3A;
-    --black_gray: #18191F;
+    --matte-black: #3A3A3A;
+    --black-gray: #18191F;
     --gray: #787885;
     --pinkish: #E02C6D;
     --blueish: #0A0826;
+    --fs-base: 16px;
+    --fm-primary: 'Poppins', sans-serif;
+    --fm-secondary: 'Inter', sans-serif;
 }
 /* Reset default styles */
 *,
@@ -18,9 +21,94 @@
   box-sizing: border-box;
   list-style: none;
 }
+/* shared or common style  */
+.description{
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 25px 0;
+}
+
 /* Style the body element */
 body {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: var(--fs-base);
+    font-family: var(--fm-primary);
 }
+
+/* header style start */
+header .container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* nav style start */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul{
+  display: flex;
+}
+nav li{
+  margin-right: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav li a{
+  text-decoration: none;
+  color: var(--gray);
+}
+.nav_title{
+  color: var(--matte-black);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* nav style end */
+
+/* banner style start */
+.banner_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;  
+  padding: 10% 0;
+}
+.banner_content{
+  max-width: 580px;
+}
+.banner_content .banner_title{
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--matte-black);
+  line-height: 70px;
+}
+.banner_content .description{
+  font-weight: 600;
+}
+.banner_content .banner_btn{
+  background: var(--pinkish);
+  color: var(--primary-clr);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.banner_img{
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.banner_img img{
+  width: 100%;
+}
+/* banner style end */
+/* header style end */
+
+/* main area style start */
